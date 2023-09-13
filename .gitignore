@@ -11,6 +11,11 @@
 # production
 /build
 
+# My ingore
+.idea
+node_modules
+
+
 # misc
 .DS_Store
 .env.local
