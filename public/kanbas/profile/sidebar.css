@@ -1,0 +1,32 @@
+.kb-profile-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    margin-left: 20px;
+    font-family: Arial;
+    width: 190px;
+    margin-right: 5px;
+}
+
+.kb-profile-nav li {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.kb-profile-nav li a {
+    color: #d41b2c;
+    text-decoration: none;
+    text-wrap: wrap;
+}
+
+.kb-profile-nav .kb-active {
+    border-left: 2px solid black;
+}
+
+.kb-profile-nav .kb-active a {
+    color: black;
+}

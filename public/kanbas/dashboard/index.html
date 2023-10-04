@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/kanbas/kanbas_navigation/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/kanbas/profile/sidebar.css">
+    <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/kanbas/dashboard/index.css">
+</head>
+<body>
+    <div class="kb-flex-container">
+        <div class="kb-black-background">
+            <ul class="kb-nav-bar">
+                <li>
+                    <img src="/images/neu-logo.png" alt="" width="50px" style="margin-top: 10px;">
+                </li>
+                <li>
+                    <a class="kb-account-link" href="/kanbas/profile/index.html">
+                        <i class="fa-solid fa-user"></i>
+                        Account</a>
+                </li>
+                <li class="kb-nav-active">
+                    <a href="/kanbas/dashboard/index.html">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        Dashboard</a>
+                </li>
+                <li>
+                    <a href="/kanbas/home.html">
+                        <i class="fa-solid fa-book"></i>
+                        Courses</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        Calendar</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        Inbox</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        History</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-display"></i>
+                        Studio</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-right"></i>
+                        Commons</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-question"></i>
+                        Help</a>
+                </li>
+            </ul>
+        </div>
+        <div class="kb-flex-column-grow">
+            <div style="font-size: 1.5em; margin-top: 10px; margin-left: 30px;">
+                Dashboard
+                <hr width="100%">
+            </div>
+
+            <div class="kb-card-container">
+                <div style="font-size: 1.2em;">Published Courses (7)</div>
+                <hr width="100%">
+                <!-- <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+                    <div class="col">
+                        <div class="card kb-course-card">
+                            <img class="card-img-top" src="/images/web-dev-card.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="kb-course-link" href="/kanbas/home.html">
+                                    <h5 class="card-title">Web Development</h5>
+                                    <div class="card-text">CS5610- Section 002</div>
+                                    <div class="card-text">Fall 2023</div>
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card kb-course-card">
+                            <img class="card-img-top" src="/images/mobile-dev.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="kb-course-link" href="/kanbas/home.html">
+                                    <h5 class="card-title">Mobile Application Development</h5>
+                                    <div class="card-text">CS5520- Section 002</div>
+                                    <div class="card-text">Fall 2023</div>
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card kb-course-card">
+                            <img class="card-img-top" src="/images/dbms.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="kb-course-link" href="/kanbas/home.html">
+                                    <h5 class="card-title">Database Management Systems</h5>
+                                    <div class="card-text">CS5200- Section 002</div>
+                                    <div class="card-text">Fall 2023</div>
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card kb-course-card">
+                            <img class="card-img-top" src="/images/comp-vision.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="kb-course-link" href="/kanbas/home.html">
+                                    <h5 class="card-title">Pattern Recognition and Computer Vision</h5>
+                                    <div class="card-text">CS 5330 Section 002</div>
+                                    <div class="card-text">Fall 2023</div>
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card kb-course-card">
+                            <img class="card-img-top" src="/images/algo.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="kb-course-link" href="/kanbas/home.html">
+                                    <h5 class="card-title">Algorithms</h5>
+                                    <div class="card-text">CS 5800 Section 002</div>
+                                    <div class="card-text">Fall 2023</div>
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card kb-course-card">
+                            <img class="card-img-top" src="/images/cloud.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="kb-course-link" href="/kanbas/home.html">
+                                    <h5 class="card-title">Fundamentals of Cloud Computing</h5>
+                                    <div class="card-text">CS 6620 Section 002</div>
+                                    <div class="card-text">Fall 2023</div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="card kb-course-card">
+                            <img class="card-img-top" src="/images/ood.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="kb-course-link" href="/kanbas/home.html">
+                                    <h5 class="card-title">Object-Oriented Design</h5>
+                                    <div class="card-text">CS 5004 Section 002</div>
+                                    <div class="card-text">Fall 2023</div>
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                </div> -->
+                
+                <div class="d-flex flex-row flex-wrap">
+                    <div class="card kb-course-card">
+                        <img class="card-img-top" src="/images/web-dev-card.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <a class="kb-course-link" href="/kanbas/home.html">
+                                <h5 class="card-title">Web Development</h5>
+                                <div class="card-text">CS5610- Section 002</div>
+                                <div class="card-text">Fall 2023</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card kb-course-card">
+                        <img class="card-img-top" src="/images/mobile-dev.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <a class="kb-course-link" href="/kanbas/home.html">
+                                <h5 class="card-title">Mobile Application Development</h5>
+                                <div class="card-text">CS5520- Section 002</div>
+                                <div class="card-text">Fall 2023</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card kb-course-card">
+                        <img class="card-img-top" src="/images/dbms.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <a class="kb-course-link" href="/kanbas/home.html">
+                                <h5 class="card-title">Database Management Systems</h5>
+                                <div class="card-text">CS5200- Section 002</div>
+                                <div class="card-text">Fall 2023</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card kb-course-card">
+                        <img class="card-img-top" src="/images/comp-vision.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <a class="kb-course-link" href="/kanbas/home.html">
+                                <h5 class="card-title">Pattern Recognition and Computer Vision</h5>
+                                <div class="card-text">CS 5330 Section 002</div>
+                                <div class="card-text">Fall 2023</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card kb-course-card">
+                        <img class="card-img-top" src="/images/algo.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <a class="kb-course-link" href="/kanbas/home.html">
+                                <h5 class="card-title">Algorithms</h5>
+                                <div class="card-text">CS 5800 Section 002</div>
+                                <div class="card-text">Fall 2023</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card kb-course-card">
+                        <img class="card-img-top" src="/images/cloud.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <a class="kb-course-link" href="/kanbas/home.html">
+                                <h5 class="card-title">Fundamentals of Cloud Computing</h5>
+                                <div class="card-text">CS 6620 Section 002</div>
+                                <div class="card-text">Fall 2023</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card kb-course-card">
+                        <img class="card-img-top" src="/images/ood.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <a class="kb-course-link" href="/kanbas/home.html">
+                                <h5 class="card-title">Object-Oriented Design</h5>
+                                <div class="card-text">CS 5004 Section 002</div>
+                                <div class="card-text">Fall 2023</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

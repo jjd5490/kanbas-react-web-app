@@ -3,95 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments</title>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/kanbas/kanbas_navigation/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/kanbas/profile/sidebar.css">
+    <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.css">
+
 </head>
 <body>
-    <table>
-        <th>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="/kanbas/profile/index.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/home.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="#">Notifications</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/profile/index.html">Profile</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                    <li>
-                        <a href="#">ePortfolios</a>
-                    </li>
-                    <li>
-                        <a href="#">Shared Content</a>
-                    </li>
-                    <li>
-                        <a href="#">The Hub</a>
-                    </li>
-                    <li>
-                        <a href="#">Qwickly Course Tools</a>
-                    </li>
-                    <li>
-                        <a href="#">Global Announcements</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <p>Jose Annunziato's Profile</p>
-                <!-- Learned about horizontal rule tage at https://www.w3schools.com/tags/tag_hr.asp -->
-                <hr width="1000">
-                <p>
-                    <form action="edit.html">
-                        <button style="float: right;">Edit Profile</button>
-                    </form>
-                </p>
-                <h1>Jose Annunziato</h1>
-                <h2>Contact</h2>
-                <p>
-                    No registered services, you can add some on the <a href="">settings</a> page.
-                </p>
-                <h2>Biography</h2>
-                <p>
-                    Faculty, Software Engineer, AI, Space, and renewables enthusiast.
-                </p>
-                <h2>Links</h2>
-                <p>
-                    <a href="https://www.youtube.com/@WebDevTV">Youtube</a>
-                </p>
+    <div class="kb-flex-container">
+        <div class="kb-black-background">
+            <ul class="kb-nav-bar">
+                <li>
+                    <img src="/images/neu-logo.png" alt="" width="50px" style="margin-top: 10px;">
+                </li>
+                <li class="kb-nav-active">
+                    <a class="kb-account-link" href="/kanbas/profile/index.html">
+                        <i class="fa-solid fa-user"></i>
+                        Account</a>
+                </li>
+                <li>
+                    <a href="/kanbas/dashboard/index.html">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        Dashboard</a>
+                </li>
+                <li>
+                    <a href="/kanbas/home.html">
+                        <i class="fa-solid fa-book"></i>
+                        Courses</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        Calendar</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        Inbox</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        History</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-display"></i>
+                        Studio</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-right"></i>
+                        Commons</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-question"></i>
+                        Help</a>
+                </li>
+            </ul>
+        </div>
+        <div class="kb-flex-column-grow">
+            <div class="kb-profile-header">
+                <i class="fa-solid fa-bars"></i>
+                Jose Annunziato's Profile
+                <hr width="100%">
+            </div>
+            <div class="kb-flex-container">
+                <div>
+                    <ul class="kb-profile-nav">
+                        <li>
+                            <a href="#">Notifications</a>
+                        </li>
+                        <li  class="kb-active">
+                            <a href="/kanbas/profile/index.html">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Files</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">ePortfolios</a>
+                        </li>
+                        <li>
+                            <a href="#">Shared Content</a>
+                        </li>
+                        <li>
+                            <a href="#">The Hub</a>
+                        </li>
+                        <li>
+                            <a href="#">Qwickly Course Tools</a>
+                        </li>
+                        <li>
+                            <a href="#">Global Announcements</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="kb-flex-column-grow kb-profile-body">
+                        <div>
+                            <form action="edit.html">
+                                <button class="kb-edit-btn btn btn-secondary btn-sm float-end">
+                                    <i class="fa-solid fa-pencil fa-flip-horizontal"></i>
+                                    Edit Profile
+                                </button>
+                            </form>
+                            <div class="kb-profile-icon">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <!-- <h1>Jose Annunziato</h1> -->
+                        <div class="kb-profile-name">
+                            Jose Annunziato 
+                        </div>
+                        <div class="kb-profile-heading">
+                            Contact
+                        </div>
+                        <p>
+                            No registered services, you can add some on the <a class="kb-red-link" href="">settings</a> page.
+                        </p>
+                        <div class="kb-profile-heading">
+                            Biography
+                        </div>
+                        <p>
+                            Faculty, Software Engineer, AI, Space, and renewables enthusiast.
+                        </p>
+                        <div class="kb-profile-heading">
+                            Links
+                        </div>
+                        <div class="kb-youtube-link">
+                            <i class="fa-solid fa-link"></i>
+                            <a class="kb-red-link" href="https://www.youtube.com/@WebDevTV">Youtube
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

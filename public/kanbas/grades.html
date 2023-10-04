@@ -4,169 +4,291 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grades</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/kanbas/kanbas_navigation/index.css">
+    <link rel="stylesheet" href="/kanbas/course_navigation/index.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <table>
-        <th>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="/kanbas/profile/index.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/home.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="/kanbas/home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Modules</a>
-                    </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/assignments/index.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/grades.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto Video</a>
-                    </li>
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/course_settings/details.html">Settings</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <select name="" id="">
-                    <option value="Gradebook">Gradebook</option>
-                </select>
-                <button>Import</button>
-                <select name="" id="">
-                    <option value="Export">Export</option>
-                </select>
-                <button>Configure</button>
-                <h4>Student Names</h4>
-                <input type="text" name="student-search" id="student-search" placeholder="Search Students">
-                <h4>Assignment Names</h4>
-                <input type="text" placeholder="Search Assigments" name="assignment-search" id="assignment-search"/>
-                <p>
-                    <button>Apply Filters</button>
-                </p>
+    <div class="kb-flex-container">
+        <div class="kb-black-background d-none d-md-block">
+            <ul class="kb-nav-bar">
+                <li>
+                    <img src="/images/neu-logo.png" alt="" width="50px" style="margin-top: 10px;">
+                </li>
+                <li>
+                    <a class="kb-account-link" href="/kanbas/profile/index.html">
+                        <i class="fa-solid fa-user"></i>
+                        Account</a>
+                </li>
+                <li>
+                    <a href="/kanbas/dashboard/index.html">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        Dashboard</a>
+                </li>
+                <li class="kb-nav-active">
+                    <a href="/kanbas/home.html">
+                        <i class="fa-solid fa-book"></i>
+                        Courses</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        Calendar</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        Inbox</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        History</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-display"></i>
+                        Studio</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-right"></i>
+                        Commons</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-question"></i>
+                        Help</a>
+                </li>
+            </ul>
+        </div>
+        <div class="kb-flex-column-grow me-5">
+            <div class="kb-small-screen-header kb-flex-container d-md-none">
+                <div>
+                    <a href="/kanbas/kanbas_navigation/mobile-nav.html" style="text-decoration: none; color: white;">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="kb-flex-column-grow .kb-header-title">
+                    <div>CS5610.17367.202410</div>
+                    <div>Modules</div>
+                </div>
+                <div>
+                    <a href="/kanbas/course_navigation/mobile-nav.html" style="text-decoration: none; color: white;">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="kb-course-header d-none d-md-block">
+                <div style="display: flex;">
+                    <i class="fa-solid fa-bars"></i>
+                    <nav class="kb-assignment-breadcrumb" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="/kanbas/home.html">
+                                    CS5610 Fall 2023 Section 002
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">Grades</li>
+                        </ol>
+                    </nav>
+                </div>
 
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Student Name</th>
-                            <th>A1 SETUP <br>Out of 100</th>
-                            <th>A2 HTML <br>Out of 100</th>
-                            <th>A3 CSS <br>Out of 100</th>
-                            <th>A4 BOOTSTRAP <br>Out of 100</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>James Dudek</td>
-                            <td style="text-align: center;">
-                                <input style="text-align: center;" type="text" size="3" maxlength="3" value="100">
-                            </td>
-                            <td style="text-align: center;">90</td>
-                            <td style="text-align: center;">95</td>
-                            <td style="text-align: center;">100</td>
-                        </tr>
-                        <tr>
-                            <td>Bilbo Baggins</td>
-                            <td style="text-align: center;">50</td>
-                            <td style="text-align: center;">
-                                <input style="text-align: center;" type="text" size="3" maxlength="3" value="60">
-                            </td>
-                            <td style="text-align: center;">70</td>
-                            <td style="text-align: center;">80</td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td style="text-align: center;">90</td>
-                            <td style="text-align: center;">90</td>
-                            <td style="text-align: center;">
-                                <input style="text-align: center;" type="text" size="3" maxlength="3" value="100">
-                            </td>
-                            <td style="text-align: center;">100</td>
-                        </tr>
-                        <tr>
-                            <td>Josh Allen</td>
-                            <td style="text-align: center;">85</td>
-                            <td style="text-align: center;">85</td>
-                            <td style="text-align: center;">90</td>
-                            <td style="text-align: center;">
-                                <input style="text-align: center;" type="text" size="3" maxlength="3" value="89">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </th>
-    </table>
+            </div>
+            <hr class="kb-course-hr" width="98%">
+            <div class="kb-flex-container">
+                <div class="d-none d-md-block">
+                    <ul class="kb-course-nav">
+                        <li>
+                            <a href="/kanbas/home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Modules</a>
+                        </li>
+                        <li>
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li>
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li>
+                            <a href="/kanbas/assignments/index.html">Assignments</a>
+                        </li>
+                        <li>
+                            <a href="#">Quizzes</a>
+                        </li>
+                        <li class="kb-active">
+                            <a href="/kanbas/grades.html">Grades</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                        <li>
+                            <a href="#">Panopto Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li>
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Files</a>
+                        </li>
+                        <li>
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li>
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li>
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li>
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li>
+                            <a href="/kanbas/course_settings/details.html">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="kb-flex-column-grow kb-home-content" style="margin-top: 20px;">
+                    <div class="kb-flex-container">
+                        <div class="kb-flex-column-grow">
+                            <!-- <select class="dropdown float-end" name="" id="">
+                                <option value="Edit Assignment Dates">Edit Assignment Dates</option>
+                            </select> -->
+                            <button class="kb-assign-top-second-btn btn btn-secondary float-end">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <button class="kb-assign-top-second-btn btn btn-secondary float-end" style="margin-left: 5px; margin-right: 5px;">
+                                <i class="fa-solid fa-file-export fa-flip-horizontal"></i>
+                                Export
+                            </button>
+                            <button class="kb-assign-top-second-btn btn btn-secondary float-end">
+                                <i class="fa-solid fa-file-import"></i>
+                                Import
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div style="width: 100%; display: flex;">
+                        <div class="float-end">
+
+                        </div>
+                    </div>  -->
+                    <hr width="100%">
+                    <div class="mt-3">
+                        <div class="container">
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <label class="kb-bold-text" for="student-search">Student Names</label>
+                                </div>
+                                <div class="col">
+                                    <label class="kb-bold-text" for="assignment-search">Assignment Names</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </span>
+                                        <input type="text" name="student-search" aria-label="First name" class="form-control" placeholder="Search Students">
+                                        <span class="input-group-text">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </span>
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </span>
+                                        <input type="text" name="assignment-search" aria-label="First name" class="form-control" placeholder="Search Assignments">
+                                        <span class="input-group-text">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </span>
+                                      </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-secondary kb-assign-top-second-btn mt-3"><i class="me-2 fa-solid fa-filter"></i>Apply Filters</button>
+                            </div>
+
+                            <div class="table-responsive mt-3">
+                                <table class="table table-bordered table-hover kb-grade-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-3">
+                                                <div>Student Name</div>
+                                            </th>
+                                            <th class="col-2">
+                                                <div>A1 SETUP</div>
+                                                <div class="kb-grade-total">Out of 100</div>
+                                            </th>
+                                            <th class="col-2">
+                                                <div>A2 HTML</div>
+                                                <div class="kb-grade-total">Out of 100</div>
+                                            </th>
+                                            <th class="col-2">
+                                                <div>A3 CSS</div>
+                                                <div class="kb-grade-total">Out of 100</div>
+                                            </th>
+                                            <th class="col-2">
+                                                <div>A4 BOOTSTRAP</div>
+                                                <div class="kb-grade-total">Out of 100</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="kb-neu-red">James Dudek</td>
+                                            <td style="text-align: center;">90</td>
+                                            <td style="text-align: center;">85</td>
+                                            <td style="text-align: center;">97</td>
+                                            <td style="text-align: center;">92</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="kb-neu-red">Bilbo Baggins</td>
+                                            <td style="text-align: center;">80</td>
+                                            <td style="text-align: center; align-items: center;">
+                                                <input class="kb-grade-input" value="99" type="text">
+                                                <span>
+                                                    <a href="#">
+                                                        <i style="color: gray;" class="fa-solid fa-right-to-bracket"></i>
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td style="text-align: center;">100</td>
+                                            <td style="text-align: center;">100</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="kb-neu-red">Harry Potter</td>
+                                            <td style="text-align: center;">95</td>
+                                            <td style="text-align: center;">85</td>
+                                            <td style="text-align: center;">70</td>
+                                            <td style="text-align: center;">98</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="kb-neu-red">Josh Allen</td>
+                                            <td style="text-align: center;">85</td>
+                                            <td style="text-align: center;">85</td>
+                                            <td style="text-align: center;">90</td>
+                                            <td style="text-align: center;">91</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
