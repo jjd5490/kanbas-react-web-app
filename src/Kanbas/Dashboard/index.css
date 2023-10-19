@@ -1,0 +1,58 @@
+.kb-course-card {
+    width: 260px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-right: 25px;
+    box-shadow: 2px 2px 2px gainsboro;
+}
+
+.kb-card-container {
+    margin-left: 50px;
+}
+
+.card-title {
+    font-size: 1em !important;
+}
+
+.card-text {
+    font-size: .9em !important; 
+}
+
+.card-img-top {
+    height: 145px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.card-img-overlay i {
+    float: right;
+    color: white;
+    font-size: 1.25em;
+}
+
+.kb-course-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.kb-course-link:hover {
+    text-decoration: underline;
+}
+
+.kb-dashboard-card-text {
+    text-decoration: none;
+    color: inherit;
+}
+
+.kb-dashboard-card-text:hover {
+    text-decoration: underline;
+}
+
+.kb-course-count {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.kb-dashboard-hr {
+    margin-top: 5px;
+    color: gray;
+}
