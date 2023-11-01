@@ -13,10 +13,14 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import RightSidebar from "./Home/RightSidebar";
+import { React, useState } from "react";
 
-function Courses() {
+function Courses({ courses }) {
+  console.log(courses);
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => String(course._id) === courseId);
+  console.log("Course:");
+  console.log(course);
   const { pathname } = useLocation();
   var [empty, kanbas, courses, id, screen, assignment_id] = pathname.split("/");
   screen = screen.replace("%20", " ");

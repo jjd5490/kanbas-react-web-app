@@ -1,9 +1,16 @@
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
-import db from "../Database";
+// import db from "../Database";
 import "./index.css";
 
-function Dashboard() {
-  const courses = db.courses;
+function Dashboard({
+  courses,
+  course,
+  setCourse,
+  addNewCourse,
+  deleteCourse,
+  updateCourse,
+}) {
   console.log(courses);
   return (
     <div className="mt-4 ms-4 me-4">
@@ -12,6 +19,9 @@ function Dashboard() {
       <div className="ms-4">
         <div className="kb-course-count">
           Published Courses ({courses.length})
+          <Link to="/Kanbas/Dashboard/Edit">
+            <button className="btn btn-danger ms-5">Edit</button>
+          </Link>
         </div>
         <hr className="kb-dashboard-hr" width="100%"></hr>
         <div className="d-flex flex-row flex-wrap mt-2">
