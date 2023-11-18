@@ -27,8 +27,8 @@ function Dashboard({
         <div className="d-flex flex-row flex-wrap mt-2">
           {courses.map((course) => (
             <Link
-              key={course._id}
-              to={`/Kanbas/Courses/${course._id}/`}
+              key={course._id["$oid"]}
+              to={`/Kanbas/Courses/${course._id["$oid"]}/`}
               className="list-group-item"
             >
               {/* {course.name} */}

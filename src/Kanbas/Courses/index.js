@@ -1,3 +1,5 @@
+import { React, useState, useEffect } from "react";
+import axios from "axios";
 import db from "../../Kanbas/Database";
 import {
   Navigate,
@@ -13,14 +15,20 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import RightSidebar from "./Home/RightSidebar";
-import { React, useState } from "react";
 
-function Courses({ courses }) {
-  console.log(courses);
+function Courses() {
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
   const { courseId } = useParams();
-  const course = courses.find((course) => String(course._id) === courseId);
-  console.log("Course:");
-  console.log(course);
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   const { pathname } = useLocation();
   var [empty, kanbas, courses, id, screen, assignment_id] = pathname.split("/");
   screen = screen.replace("%20", " ");
