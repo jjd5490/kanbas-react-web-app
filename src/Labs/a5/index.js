@@ -2,7 +2,8 @@ import EncodingParametersInURLs from "./EncodingParametersInURLs";
 import WorkingWithObjects from "./WorkingWithObjects";
 import WorkingWithArrays from "./WorkingWithArrays";
 function Assignment5() {
-  const API_BASE = process.env.REACT_APP_API_BASE;
+  const BASE = process.env.REACT_APP_API_BASE;
+  const API_BASE = BASE.substring(0, BASE.lenght - 4);
   const URL = `${API_BASE}/a5/welcome`;
   return (
     <div>
