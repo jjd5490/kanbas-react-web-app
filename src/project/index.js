@@ -8,7 +8,7 @@ import Signup from "./users/signup";
 function Project() {
   return (
     <div className="row">
-      <div className="col-3">
+      <div className="col-2">
         <ProjectNav />
       </div>
       <div className="col-9 ms-2 me-2 mb-2 mt-2">
