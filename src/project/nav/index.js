@@ -6,7 +6,7 @@ function ProjectNav() {
   const { pathname } = useLocation();
 
   return (
-    <div className="col-2">
+    <div className="col">
       <div className="list-group">
         <div
           className={`list-group-item ${
