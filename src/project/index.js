@@ -8,10 +8,10 @@ import Signup from "./users/signup";
 function Project() {
   return (
     <div className="row">
-      <div className="col">
+      <div className="col-3">
         <ProjectNav />
       </div>
-      <div className="col-10 ms-2 me-2 mb-2 mt-2">
+      <div className="col-9 ms-2 me-2 mb-2 mt-2">
         <Routes>
           <Route path="/" element={<Navigate to="/project/home" />} />
           <Route path="/signin" element={<Signin />} />
