@@ -8,6 +8,7 @@ export const BASE_API = process.env.REACT_APP_BASE_API_URL;
 console.log("Base API:");
 console.log(BASE_API);
 export const USERS_API = `${BASE_API}/api/users`;
+console.log(USERS_API);
 export const signin = async (credentials) => {
   const response = await request.post(`${USERS_API}/signin`, credentials);
   return response.data;
