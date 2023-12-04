@@ -11,7 +11,7 @@ function Project() {
       <div>
         <ProjectNav />
       </div>
-      <div className="col-10">
+      <div className="col-10 ms-2 me-2 mb-2 mt-2">
         <Routes>
           <Route path="/" element={<Navigate to="/project/home" />} />
           <Route path="/signin" element={<Signin />} />
